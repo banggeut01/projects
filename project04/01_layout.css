@@ -1,0 +1,51 @@
+body {
+  height: 10000px; 
+}
+
+nav a, title {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+header {
+  height: 350px;
+  width: 100%;
+  background-image: url("./images/배경이미지.jpg");
+}
+
+
+header h2 {
+  line-height:350px;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Nanum Myeongjo', serif;
+}
+
+/* 
+  높이는 50px 이상
+  너비는 브라우저 전체 영역 
+*/
+footer {
+  height: 50px;
+  width: 100%;
+}
+
+footer > p {
+  line-height: 50px;
+  display: float;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+footer > a {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 50px;
+  width: 50px;
+  z-index: 1000;
+}
+
+footer > img {
+  color: white;
+  z-index: 1000;
+}

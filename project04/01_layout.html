@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>영화추천사이트</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="01_layout.css">
+  <link href="https://fonts.googleapis.com/css?family=Gothic+A1|Nanum+Gothic|Nanum+Myeongjo|Noto+Sans+KR&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- 
+    sticky-top:
+    최상단에 위치 
+    Sticky navigation bar
+  -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <a class="navbar-brand" href="#">영화추천사이트</a>
+    <!-- 
+      justify-content-end:
+      Item List 우측 정렬 
+    -->
+    <div class="collapse navbar-collapse mr-auto justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <!-- 
+            '친구 평점 보러가기, log in' 링크 사용 못하게.
+
+            tabindex: 키보드 접근성에 근접한 속성
+            -1: 탭 키에 대해 포커스 해제 
+
+            aria-disabled: 엘리먼트 감지 되지만 비활성화, 동작 안됨
+          -->
+          <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">친구 평점 보러가기</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Log in</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <header id="up">
+      <h2 class="text-white">당신에게 어울리는 영화를 추천해드립니다.</h2>
+  </header>
+  <!-- footer
+    브라우저 최하단에 위치
+    padding이 좌우로 3rem
+   -->
+  <footer class="fixed-bottom px-5 bg-dark">
+    <p class="text-white">지니짱</p>
+    <a href="#up"><img src="./images/up.png" alt="up로고"></a>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
