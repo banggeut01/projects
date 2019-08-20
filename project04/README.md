@@ -270,30 +270,28 @@
         
      2. **(필수) subtitle**
      
-           1. **필수 사항**
-              * subtitle 영역은 위 아래 margin이 **3rem**입니다. 
-              * 글씨 부분은 `h3` 태그입니다.
-              * 밑줄은 너비가  70px이고, 색상은 자유롭게 해주세요. 
-           2. 선택 사항
-              * **1. 필수 사항**을 제외한 모든 내용은 자유롭게 구성할 수 있습니다. 
-              * 추가 문구 등 자유롭게 해주세요.
+        1. **필수 사항**
+           * subtitle 영역은 위 아래 margin이 **3rem**입니다. 
+           * 글씨 부분은 `h3` 태그입니다.
+           * 밑줄은 너비가  70px이고, 색상은 자유롭게 해주세요. 
+        2. 선택 사항
+           * **1. 필수 사항**을 제외한 모든 내용은 자유롭게 구성할 수 있습니다. 
+           * 추가 문구 등 자유롭게 해주세요.
         ```html
-     <!-- 에러!!
-       hr태그는 아래와 같이 하면 color 적용이 안된다. 
-     -->
-     <hr style="width: 70px; color:#D35400;">
-        
-     <!-- 아래와 같이 쓸 것 -->
-     <hr style="width: 70px;" color="#D35400;">   
-     <div class="container">
-       <!-- subtitle
-         밑줄 너비 70px
-       -->
-       <div class="my-5 text-center">
-         <h3>영화 목록</h3>
-         <hr style="width: 70px;" color="#grey;">
-       </div>
-     </div>
+        <!-- 에러!!
+          hr태그는 아래와 같이 하면 color 적용이 안된다. 
+        -->
+        <!-- 아래와 같이 쓸 것 -->
+        <hr style="width: 70px;" color="#D35400;">   
+        <div class="container">
+          <!-- subtitle
+            밑줄 너비 70px
+          -->
+          <div class="my-5 text-center">
+            <h3>영화 목록</h3>
+            <hr style="width: 70px;" color="#grey;">
+          </div>
+        </div>
         ```
      
      3. **(필수) Card view**
@@ -472,6 +470,9 @@
      </div>
      ```
      
-     
+
+
+
+* 결과화면
 
 ![결과화면](./images/결과화면.png)
